@@ -52,7 +52,7 @@ h1:not(.header-content) {
 
 // -
 /*
-section#services {
+section#services1 {
     // @include flex-position($x:space-around);
     // padding: 40px;
     // padding: 4.5rem;
@@ -118,6 +118,33 @@ section#services {
     }
 } */
 
+// -
+section#services2 {
+    @include flex-position($x:space-around);
+    padding: 40px;
+    padding-top: 8dvh;
+    background-color: yellow;
+
+    #services-txt {
+        background-color: red;
+        h2 {
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--primary-color);
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-size: 1.5em;
+            display: inline;
+        }
+
+        width: 40%;
+    }
+
+    height: 10%;
+}
 
 // -
 section#about {

@@ -40,10 +40,17 @@ main {
     }
 }
 
-section {
+@mixin section-style($isException, $height)
+{
+    @if $isException {
+        $section-height: $height;
+    } @else {
+        $section-height: 100vh;
+    }
+
     @include box-styles(
         $min-width: 100%,
-        $height: 100vh,
+        $height: $section-height,
         $bg: var(--bg-color),
         $clr: var(--font-color),
         $padding: 2rem,
@@ -51,6 +58,44 @@ section {
         $border: none,
         $b-radius: none
     );
+}
+
+section {
+
+    // @include section-style($isException: true);
+    @include box-styles(
+        $min-width: 100%,
+        $height: $section-height,
+        $bg: var(--bg-color),
+        $clr: var(--font-color),
+        $padding: 2rem,
+        $margin: 0,
+        $border: none,
+        $b-radius: none
+    );
+
+    &#services2 {
+        height: 50px;
+    }
+
+    // &#services2 {
+        // @include section-style($isException: true, $height: 50px);
+    // }
+
+    // @include box-styles(
+    //     $min-width: 100%,
+    //     $height: 100vh,
+    //     $bg: var(--bg-color),
+    //     $clr: var(--font-color),
+    //     $padding: 2rem,
+    //     $margin: 0,
+    //     $border: none,
+    //     $b-radius: none
+    // );
+
+    // &#services {
+    //     height: 50px;
+    // }
 }
 
 .icon-div {
