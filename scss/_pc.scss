@@ -7,7 +7,7 @@ section:nth-child(odd) {
     background-color: var(--black-color);
 }
 
-h1 {
+h1:not(.header-content) {
     text-align: center;
 }
 

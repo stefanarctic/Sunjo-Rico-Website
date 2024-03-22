@@ -43,6 +43,31 @@
     gap: $gap;
 }
 
+// Simpler flex positioning
+@mixin position($position)
+{
+    display: flex;
+    justify-content: $position;
+    align-items: $position;
+}
+
+// Center positioning
+@mixin pos-center()
+{
+    @include position(center);
+}
+
+// Left positioning
+@mixin pos-left()
+{
+    @include position(left);
+}
+
+// Right positioning
+@mixin pos-right()
+{
+    @include position(right);
+}
 
 
 // - Box - Creating The Box

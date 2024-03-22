@@ -199,3 +199,35 @@ header {
         }
     }
 }
+
+main {
+    div#main {
+        @include flex-position($display: flex, $x: center, $y: left, $dir: column, $gap: 10%);
+
+        width: 80vw;
+        height: 70vh;
+
+        border-radius: 30px;
+        padding: 5%;
+
+        background-color: black;
+        color: white;
+
+        // @include ele-bg($url: "images/Green_And_Yellow_Bg_Image.png");
+        background: url("../../images/Night\ City1.png") no-repeat center fixed;
+        background-size: cover;
+        // filter: brightness(80%);
+
+        h1.header-content, p.header-content, button.header-content {
+            // font-size: 100%;
+        }
+
+        h1.header-content {
+            font-size: 5rem;
+        }
+
+        p.header-content {
+            font-size: 120%;
+        }
+    }
+}
