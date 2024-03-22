@@ -50,6 +50,74 @@ h1:not(.header-content) {
 }
 
 
+// -
+/*
+section#services {
+    // @include flex-position($x:space-around);
+    // padding: 40px;
+    // padding: 4.5rem;
+    // padding-top: 8dvh;
+    background-color: green;
+    // color: white;
+
+    margin-top: 0px;
+    padding-top: 0px;
+
+    display: flex;
+    justify-content: left;
+    align-items: top;
+
+    div#services-child {
+
+        background-color: red;
+        // margin-top: 0px;
+        // padding-top: 0px;
+        // margin-left: 5%;
+
+        @include flex-position($display: flex, $x: center, $y: left, $dir: column, $gap: 10%);
+
+        width: 80vw;
+        height: 70vh;
+
+        border-radius: 30px;
+        // margin-top: 0px;
+        padding: 5%;
+        // padding-top: 0px;
+
+        ul.services-list {
+            background-color: yellow;
+            // padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+
+            li {
+                div {
+                    width: 20rem;
+                    height: 20rem;
+                    margin-right: 50px;
+                    padding: 10px;
+                    
+                    border: 1px solid black;
+                    border-radius: 10px;
+
+                    img {
+
+                    }
+
+                    h3 {
+                        padding-top: 5px;
+                    }
+
+                    p {
+                        padding-top: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+} */
+
 
 // -
 section#about {

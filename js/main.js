@@ -1,5 +1,5 @@
 
 // Temporary loading fix
 window.onload = () => {
-    document.getElementById('home').scrollIntoView();
+    // document.getElementById('home').scrollIntoView();
 }
