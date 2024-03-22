@@ -108,6 +108,15 @@
     box-shadow: $h $v $blur $spread $clr;
 }
 
+// - Text - Add Shadow to Text
+@mixin text-shadow(
+    $h:0,
+    $v:3px,
+    $blur:1.2rem,
+    $clr:var(--shadow-color)
+){
+    text-shadow: $h $v $blur $clr;
+}
 
 
 // - Box - Pinterest Imag View Style
@@ -118,4 +127,11 @@
 ){
     columns:$width $cols;
     column-gap:$gap;
+}
+
+// Modify the size of elements (both width and height)
+@mixin size($size)
+{
+    width: $size;  
+    height: $size;
 }

@@ -216,18 +216,20 @@ main {
         // @include ele-bg($url: "images/Green_And_Yellow_Bg_Image.png");
         background: url("../../images/Night\ City1.png") no-repeat center fixed;
         background-size: cover;
-        // filter: brightness(80%);
-
-        h1.header-content, p.header-content, button.header-content {
-            // font-size: 100%;
-        }
 
         h1.header-content {
             font-size: 5rem;
+            text-shadow: 2px 2px 4px #000000;
         }
 
         p.header-content {
             font-size: 120%;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        button.header-content {
+            // @include box-shadow($blur: 0.5rem, $clr: var(--button-shadow-color));
+            box-shadow: 2px 2px 4px #000000;
         }
     }
 }

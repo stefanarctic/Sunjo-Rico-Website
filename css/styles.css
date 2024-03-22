@@ -8,6 +8,7 @@
   --font-color: black;
   --bg-color: white;
   --shadow-color: rgba(11, 255, 255, 0.63);
+  --button-shadow-color: rgb(3, 173, 3);
   --shadow-color-2: rgba(173, 19, 211, 0.774);
   --white-color:#fff;
   --gray-color: #9b9b9b;
@@ -367,9 +368,14 @@ main div#main {
 }
 main div#main h1.header-content {
   font-size: 5rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 main div#main p.header-content {
   font-size: 120%;
+  text-shadow: 2px 2px 4px #000000;
+}
+main div#main button.header-content {
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .bg-vid {
