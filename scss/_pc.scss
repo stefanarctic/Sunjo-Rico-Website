@@ -4,7 +4,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: var(--black-color);
+    // background-color: var(--black-color);
 }
 
 h1:not(.header-content) {
@@ -120,13 +120,20 @@ section#services1 {
 
 // -
 section#services2 {
-    @include flex-position($x:space-around);
+    // @include flex-position($x:space-around);
     padding: 40px;
     padding-top: 8dvh;
     background-color: yellow;
-
+    display: flex;
+    justify-content: left;
+    // left: 200%;
+    // top: 0px;
+    // margin-top: 0px;
+    // align-items: left;
+    
     #services-txt {
         background-color: red;
+        margin-left: 8%;
         h2 {
             color: var(--primary-color);
             letter-spacing: 2px;

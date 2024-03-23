@@ -63,6 +63,7 @@ main {
 section {
 
     // @include section-style($isException: true);
+    $section-height: 100vh;
     @include box-styles(
         $min-width: 100%,
         $height: $section-height,
