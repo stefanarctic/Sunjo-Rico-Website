@@ -516,26 +516,46 @@ section#services1 {
 section#services2 {
   padding: 40px;
   padding-top: 8dvh;
-  background-color: yellow;
   display: flex;
   justify-content: left;
   height: 10%;
 }
 section#services2 #services-txt {
-  background-color: red;
-  margin-left: 8%;
-  width: 40%;
+  margin-left: 5%;
+  width: 80vw;
+  height: 100vh;
+  border-radius: 30px;
+  padding: 5%;
 }
 section#services2 #services-txt h2 {
-  color: var(--primary-color);
+  color: black;
   letter-spacing: 2px;
   margin-bottom: 25px;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid black;
   padding-bottom: 25px;
 }
 section#services2 #services-txt p {
   font-size: 1.5em;
   display: inline;
+}
+section#services2 #services-txt ul.services-list {
+  display: flex;
+  flex-direction: row;
+}
+section#services2 #services-txt ul.services-list li div {
+  width: 20rem;
+  height: 20rem;
+  margin-right: 50px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+section#services2 #services-txt ul.services-list li div h3 {
+  padding-top: 5px;
+}
+section#services2 #services-txt ul.services-list li div p {
+  padding-top: 10px;
+  font-size: 100%;
 }
 
 section#about {

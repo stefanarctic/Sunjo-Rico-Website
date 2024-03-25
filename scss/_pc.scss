@@ -123,22 +123,26 @@ section#services2 {
     // @include flex-position($x:space-around);
     padding: 40px;
     padding-top: 8dvh;
-    background-color: yellow;
+    // background-color: black;
     display: flex;
     justify-content: left;
+    // padding-top: 0px;
     // left: 200%;
     // top: 0px;
     // margin-top: 0px;
     // align-items: left;
     
     #services-txt {
-        background-color: red;
-        margin-left: 8%;
+        // background-color: red;
+        margin-left: 5%;
+        // width: 40%;
+        
         h2 {
-            color: var(--primary-color);
+            // color: var(--primary-color);
+            color: black;
             letter-spacing: 2px;
             margin-bottom: 25px;
-            border-bottom: 1px solid var(--primary-color);
+            border-bottom: 1px solid black;
             padding-bottom: 25px;
         }
 
@@ -147,7 +151,50 @@ section#services2 {
             display: inline;
         }
 
-        width: 40%;
+        // background-color: red;
+
+        // @include flex-position($display: flex, $x: center, $y: left, $dir: column, $gap: 10%);
+
+        width: 80vw;
+        // height: 70vh;
+        height: 100vh;
+
+        border-radius: 30px;
+        padding: 5%;
+        // padding-top: 0px;
+
+        ul.services-list {
+            // background-color: yellow;
+            // padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+
+            li {
+                div {
+                    width: 20rem;
+                    height: 20rem;
+                    margin-right: 50px;
+                    padding: 10px;
+                    
+                    border: 1px solid black;
+                    border-radius: 10px;
+
+                    img {
+
+                    }
+
+                    h3 {
+                        padding-top: 5px;
+                    }
+
+                    p {
+                        padding-top: 10px;
+                        font-size: percentage($number: 1);
+                    }
+
+                }
+            }
+        }
     }
 
     height: 10%;
