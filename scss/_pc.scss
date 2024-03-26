@@ -298,6 +298,15 @@ section#testimonials {
         pointer-events: none;  // prevents downloading pics XD
         user-select: none;
     }
+
+    .hero video {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        pointer-events: none;  // prevents downloading pics XD
+        user-select: none;
+    }
     
     .content {
         position: absolute;

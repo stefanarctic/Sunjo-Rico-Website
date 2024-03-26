@@ -26,6 +26,8 @@
     });
 })(jQuery)
 
+let showedTestimonials = false;
+
 const navLinks = document.querySelectorAll("#nav-list li a")
 const sections = [$('header'), ...document.querySelectorAll('section')]
 navLinks[0].classList.add("selected")
@@ -40,6 +42,15 @@ window.onscroll = _ => {
             navLinks.forEach(link => {
                 link.classList.remove('selected')
                 document.querySelector(`#nav-list li a[data-href*=${id}`).classList.add('selected')
+
+                // For the testimonial section
+                if(id === 'testimonials' && !showedTestimonials)
+                {
+                    showedTestimonials = true;
+                    const videoElement = document.getElementById('video0');
+                    videoElement.currentTime = 0;
+                    videoElement.play();
+                }
             })
         }
         // header += main fix

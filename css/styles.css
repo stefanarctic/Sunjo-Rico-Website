@@ -644,6 +644,17 @@ section#testimonials .hero img {
      -moz-user-select: none;
           user-select: none;
 }
+section#testimonials .hero video {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 section#testimonials .content {
   position: absolute;
   left: 0;
