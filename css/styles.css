@@ -543,15 +543,23 @@ section#services2 #services-txt ul.services-list {
   flex-direction: row;
 }
 section#services2 #services-txt ul.services-list li div {
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 22rem;
   margin-right: 50px;
   padding: 10px;
+  transition: 0.3s;
   border: 1px solid black;
   border-radius: 10px;
 }
+section#services2 #services-txt ul.services-list li div:hover {
+  background-color: rgb(10, 184, 10);
+  transform: translateY(-5%);
+  transition: 0.3s;
+  cursor: pointer;
+}
 section#services2 #services-txt ul.services-list li div h3 {
   padding-top: 5px;
+  padding-bottom: 2.5px;
 }
 section#services2 #services-txt ul.services-list li div p {
   padding-top: 10px;
@@ -644,7 +652,7 @@ section#testimonials .content {
   width: 75%;
   height: 270px;
   color: var(--bg-color);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   -webkit-backdrop-filter: blur(4.5px);
           backdrop-filter: blur(4.5px);
   border-radius: 10px;
@@ -666,7 +674,7 @@ section#testimonials .content p {
 section#testimonials .indicator {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 section#testimonials .indicator .btn {
   display: inline-block;

@@ -171,10 +171,22 @@ section#services2 {
 
             li {
                 div {
-                    width: 20rem;
-                    height: 20rem;
+                    width: 22rem;
+                    height: 22rem;
                     margin-right: 50px;
                     padding: 10px;
+
+                    &:hover {
+                        $hover-color: rgb(10, 184, 10);
+                        background-color: $hover-color;
+                        transform: translateY(-5%);
+                        // Hover transition
+                        transition: 0.3s;
+                        cursor: pointer;
+                    }
+
+                    // Unhover transition
+                    transition: 0.3s;
                     
                     border: 1px solid black;
                     border-radius: 10px;
@@ -185,6 +197,7 @@ section#services2 {
 
                     h3 {
                         padding-top: 5px;
+                        padding-bottom: 2.5px;
                     }
 
                     p {
@@ -243,6 +256,7 @@ section#about {
 
 // -
 section#testimonials {
+    // background-color: var(--black-color);
     .slide-container {
         width: 70%;
         height: 70%;
@@ -294,7 +308,8 @@ section#testimonials {
         height: 270px;
         
         color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.7);
+        // background: rgba(255, 255, 255, 0.7);
+        background: rgba(0, 0, 0, 0.7);
         
         backdrop-filter: blur(4.5px);
         border-radius: 10px;
@@ -313,7 +328,7 @@ section#testimonials {
     .indicator {
         display: flex;
         justify-content: center;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     
     .indicator .btn {
