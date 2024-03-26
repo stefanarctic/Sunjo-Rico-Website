@@ -366,7 +366,7 @@ main div#main {
   padding: 5%;
   background-color: black;
   color: white;
-  background: url("../../images/Night City1.png") no-repeat center fixed;
+  background: url("../../images/Night_City1.png") no-repeat center fixed;
   background-size: cover;
 }
 main div#main h1.header-content {
