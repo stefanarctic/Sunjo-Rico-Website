@@ -3,6 +3,7 @@ header {
     position: relative;
     // Old Galaxy Image: https://w.wallhaven.cc/full/48/wallhaven-48e67o.jpg
     // @include ele-bg($url: "/images/Green_And_Yellow_Bg_Image.png");
+    // background-color: white;
 
     nav {
         z-index: 999;
@@ -214,8 +215,8 @@ main {
         color: white;
 
         // @include ele-bg($url: "images/Green_And_Yellow_Bg_Image.png");
-        background: url("../../images/Night_City1.png") no-repeat center fixed;
-        background-size: cover;
+        // background: url("../../images/Night_City1.png") no-repeat center fixed;
+        // background-size: cover;
         
 
         h1.header-content {
